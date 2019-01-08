@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "SourceCompare is already compiled, skipping..."
+exit 0

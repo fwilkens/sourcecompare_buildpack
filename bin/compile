@@ -1,3 +1,12 @@
 #!/bin/sh
-echo "SourceCompare is already compiled, skipping..."
+
+if [ -z "$BUILD_DIR" ];
+then
+  echo "not a heroku env, skipping"
+else
+  echo "copying sourcecompare cli binary to home/vendor/bin"
+  mkdir $HOME/vendor/bin
+  cp ../sourcecompare_cli $HOME/vendor/bin/
+fi
+
 exit 0

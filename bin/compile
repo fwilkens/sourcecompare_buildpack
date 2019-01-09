@@ -1,12 +1,7 @@
 #!/bin/sh
+echo "copying sourcecompare cli binary to home/vendor/bin"
 
-if [ -z "$BUILD_DIR" ];
-then
-  echo "not a heroku env, skipping"
-else
-  echo "copying sourcecompare cli binary to home/vendor/bin"
-  mkdir $HOME/vendor/bin
-  cp ../sourcecompare_cli $HOME/vendor/bin/
-fi
+mkdir $1/vendor/bin
+cp ../sourcecompare_cli $1/vendor/bin/
 
 exit 0

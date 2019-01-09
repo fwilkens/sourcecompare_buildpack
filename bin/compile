@@ -2,6 +2,9 @@
 echo "copying sourcecompare cli binary to home/vendor/bin"
 
 mkdir $1/vendor/bin
+pwd
+ls
+ls ../
 cp ../sourcecompare_cli $1/vendor/bin/
 
 exit 0
